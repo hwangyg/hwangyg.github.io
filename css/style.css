@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Playfair+Display:ital,wght@0,800;1,700&display=swap');
+
+/* For JS*/
+
+.hidden {
+    display: none;
+}
+
+* {
+    color: #ffffff;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    filter: blur(8px);
+}
+
+body { 
+    height: 100%; 
+}
+
+/* weather */
+
+#weather {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#weather span {
+    color: #516BEB;
+}
+
+/* middleground */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+}
+
+.components {
+    width: 900px;
+    height: 480px;
+}
+
+.transparent-bg {
+    padding: 10px 40px 20px 40px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h2, h3, p, div {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, .namerequest, .namerequest::placeholder {
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #EDD2F3;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.scroll{
+    overflow-y: auto;
+    height: 200px;
+}
+
+/* Form */
+
+.quote-div {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+#quote {
+    text-align: center;
+    width: 50%;
+}
+
+#quote-span {
+    font-style: italic;
+}
+
+/* Form */
+
+button {
+    background-color: #84DFFF; /* Green */
+    border: none;
+    color: #516BEB;
+    padding: 5px 7.5px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; 
+    margin-left: 5px;
+}
+
+#name-button {
+    background-color: #EDD2F3; /* Green */
+    color: #516BEB;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    margin: 10px;
+}
+
+#login-form {
+    padding-bottom: 5%;
+}
+
+ul {
+    list-style: none;
+    padding-left:0;
+}
+
+.namerequest::placeholder {
+    color: #EDD2F3;
+    border-bottom: 2px solid #EDD2F3;
+}
+
+.todolist::placeholder {
+    color: #84DFFF;
+    border-bottom: 2px solid #84DFFF;
+}
+
+.namerequest {
+    border-bottom: 2px solid #EDD2F3;
+    color: #EDD2F3;
+    width: 410px;
+    text-align: left;
+}
+
+.todolist {
+    font-size: 20px;
+    margin: auto;
+    width: 270px;
+    color: #84DFFF;
+    border-bottom: 2px solid #84DFFF;
+    text-align: left;
+}
+
+#login-form input {
+}

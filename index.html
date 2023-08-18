@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentup App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="weather">
+        <span id="city"></span>
+        <span id="temperature"></span>
+    </div>
+    <div id="centering" class="container">
+        <div class="components">
+            <div class="transparent-bg">
+                <h2 id="clock">00:00:00</h2>
+                <form id="login-form" class="hidden">
+                    <input required maxlength="15" type="text" placeholder="Please type your name" class="namerequest" name="yourname" />
+                    <button id="name-button" name="loginbutton">Enter</button>
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+                <div class="scroll">
+                    <form id="todo-form">
+                        <input name="todolist" class="todolist" type="text" placeholder="Write a To Do and Press enter">
+                    </form>
+                    <ul id="todo-list">
+                    </ul>
+                </div>
+            </div>
+            <div class="quote-div" id="quote">
+                <span id="quote-span"></span>
+                <br>
+                <span id="author-span"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather-auto.js"></script>
+</body>
+</html>
